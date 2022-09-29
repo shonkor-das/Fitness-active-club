@@ -27,5 +27,6 @@
 @media screen and (min-width: 480px) {
     .products-container{
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
     }
 }

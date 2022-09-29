@@ -14,6 +14,17 @@ const Question = () => {
                 <p>Props: The Data is passed from one component to another.It is Immutable (cannot be modified).Props can be used with state and functional components.Props are read-only.</p>
                 <p>State: The Data is passed within the component only.It is Mutable ( can be modified).State can be used only with the state components/class component (Before 16.0).State is both read and write.</p>
             </div>
+            <div className='question-and-ans'>
+                <h3>ReactJS useEffect is used for data load and another use?</h3>
+                <ul>
+                    <li>Running once on mount: fetch API data</li>
+                    <li>Running on state change: validating input field</li>
+                    <li>Running on state change: live filtering</li>
+                    <li>Running on state change: trigger animation on new array value</li>
+                    <li>Running on props change: update paragraph list on fetched API data update</li>
+                    <li>Running on props change: updating fetched API data to get BTC updated price</li>
+                </ul>
+            </div>
         </div>
     );
 };
