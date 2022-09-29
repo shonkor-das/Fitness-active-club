@@ -7,11 +7,12 @@ import Break from '../Break/Break';
 
 const Cart = (props) => {
     const {cart} = props;
-  const {text} = props
+
     let total = 0;
     for(const product of cart){
         total = total + product.time;
     }
+    
     return (
         <div className='cart'>
            <div className='cart-info'>
@@ -28,7 +29,7 @@ const Cart = (props) => {
                 <Break></Break>
                 <h4>Exercise Details</h4>
                 <p className='Grand-total'>Exercise time : <small>{total} seconds</small></p>
-                <p className='Grand-total'>Break time : {text}</p>
+                <p className='Grand-total'>Break time : {}</p>
 
             </div>
             <button className='btn Activity-btn'>

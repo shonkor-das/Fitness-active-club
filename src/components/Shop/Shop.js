@@ -5,8 +5,11 @@ import Product from '../product/Product';
 import './Shop.css';
 import Cart from '../Cart/Cart';
 
+
 const Shop = () => {
     const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
+    const [breakTime,setBreackTime] = useState([])
 
     useEffect(()=>{
         fetch('products.json')
@@ -14,15 +17,15 @@ const Shop = () => {
         .then(data => setProducts(data))
     },[]);
 
-    const [cart, setCart] = useState([]);
-
     const handleAddToCart = (product) =>{
-
         const newCart = [...cart, product];
         setCart(newCart);
         addToDb(product.id);
     } 
-
+    const handleBreakBtn = (breakTime) =>{
+        const newBreakTime = [...breakTime, products];
+        setBreackTime(newBreakTime);
+    }
 
     return (
         <div className='shop-container'>
@@ -32,7 +35,7 @@ const Shop = () => {
                     key={product.id}
                     product={product}
                     handleAddToCart={handleAddToCart}
-    
+                    handleBreakBtn = {handleBreakBtn}
                     ></Product>)
                 }
             </div>
