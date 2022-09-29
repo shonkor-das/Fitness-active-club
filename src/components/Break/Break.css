@@ -1,0 +1,24 @@
+
+.break-info{
+    display: flex;
+    margin-left: -50px;
+    justify-content: center;
+    border: none;
+    padding: 0px;
+}
+.break-info button{
+    border: none;
+    background-color: #FFFFFF;
+}
+.break-info p{
+    margin-right: 3px;
+    background-color: #E9EBEC;
+    border-radius: 50px;
+    padding: 2px;
+    font-weight: 700;
+}
+
+.time p{
+    background-color: blue;
+    color: white;
+}

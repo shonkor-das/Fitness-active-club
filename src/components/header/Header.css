@@ -1,0 +1,16 @@
+
+.header {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.header img{
+    height: 50px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.header h1{
+    margin-left: 10px;
+}

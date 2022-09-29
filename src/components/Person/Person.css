@@ -1,0 +1,24 @@
+
+.person-info{
+    display: flex;
+    background-color: #FFFFFF;
+    margin-right: 50px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0px;
+}
+.person-info p{
+    font-weight: 700;
+    margin-right: 13px;
+    font-size: large;
+    margin-top: 6px;
+}
+p.person-mete{
+    font-weight: 400;
+    margin-right: 13px;
+    font-size: small;
+    margin-top: -10px;
+}
+.person-info sub{
+    font-weight: 400;
+}
