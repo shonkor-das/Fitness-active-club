@@ -10,11 +10,11 @@
     border: none;
     background-color: #FFFFFF;
 }
-.break-info p{
+.btn-break{
     margin-right: 3px;
     background-color: #E9EBEC;
-    border-radius: 50px;
-    padding: 2px;
+    
+    padding: 10px;
     font-weight: 700;
 }
 

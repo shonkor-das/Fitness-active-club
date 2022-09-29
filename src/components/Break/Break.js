@@ -1,30 +1,18 @@
-import React from 'react';
+
+
 import './Break.css';
 
 const Break = () => {
-   
-    // function breakCount(value){
-    //     const {breakCount} = value;
-    // }
+
     return (
         <div>
             <h4>Add A Break</h4>
             <div className='break-info'>
-                <button >
-                    <p>10<small>s</small></p>
-                </button>
-                <button >
-                    <p>20<small>s</small></p>
-                </button >
-                <button className='time' >
-                    <p>30<small>s</small></p>
-                </button>
-                <button >
-                    <p>40<small>s</small></p>
-                </button>
-                <button >
-                    <p>50<small>s</small></p>
-                </button>
+                <button className='btn-break'>10s</button>
+                <button className='btn-break'>20s</button >
+                <button className='btn-break'>30s</button>
+                <button className='btn-break'>40s</button >
+                <button className='btn-break'>50s</button >
             </div>
         </div>
     );
