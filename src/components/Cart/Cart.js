@@ -15,6 +15,7 @@ const Cart = (props) => {
         total = total + product.time;
     }
 
+
     const diffToast = () =>{
         toast('Congratulations your activity is done', {
             position: toast.POSITION.BOTTOM_RIGHT,
