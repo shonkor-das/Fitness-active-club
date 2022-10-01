@@ -8,15 +8,14 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = (props) => {
-    const {cart} = props;
-
+    const { cart } = props;
     let total = 0;
-    for(const product of cart){
+    for (const product of cart) {
         total = total + product.time;
     }
 
 
-    const diffToast = () =>{
+    const diffToast = () => {
         toast('Congratulations your activity is done', {
             position: toast.POSITION.BOTTOM_RIGHT,
             className: 'toast-message'
@@ -25,20 +24,22 @@ const Cart = (props) => {
 
     return (
         <div className='cart'>
-           <div className='cart-info'>
+            <div className='cart-info'>
                 <div className='cart-img'>
-                   <img src={logo} alt=""/>
+                    <img src={logo} alt="" />
                 </div>
                 <div className='name'>
                     <h3>Shonkor Das</h3>
                     <p><small>Chittagong,Bangladesh</small></p>
                 </div>
-           </div>
+            </div>
             <div className='order-info'>
                 <Person></Person>
+                <h4>Add A Break</h4>
                 <Break></Break>
                 <h4>Exercise Details</h4>
                 <p className='Grand-total'>Exercise time : <small>{total} seconds</small></p>
+
                 <p className='Grand-total'>Break time : </p>
 
             </div>
